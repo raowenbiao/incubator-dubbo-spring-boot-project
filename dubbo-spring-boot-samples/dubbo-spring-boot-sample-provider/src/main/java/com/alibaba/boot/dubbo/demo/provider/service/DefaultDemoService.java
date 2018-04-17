@@ -35,6 +35,7 @@ import com.alibaba.dubbo.config.annotation.Service;
 public class DefaultDemoService implements DemoService {
 
     public String sayHello(String name) {
+    	System.out.println("Hello, " + name + " (from Spring Boot)");
         return "Hello, " + name + " (from Spring Boot)";
     }
 
